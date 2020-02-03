@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="container" >
+{% for q in object_list %}
+   <div class="container-wrap">
+       <div class="heading-section">
+           {{ q.title }}
+
+       </div>
+       <div class="container">
+           {{ q.text }}
+       </div>
+   </div>
+    <br>
+{% endfor %}
+</div>
+
+
+{% endblock %}
